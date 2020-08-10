@@ -2,7 +2,7 @@
 
 JS challenges from [edabit](https://edabit.com/challenges) for trainning purposes.
 
-1. [Happy numbers](https://github.com/mathvalenza/javascript-challenges/tree/master/happy-numbers) (very hard);
+1. [Happy numbers](https://edabit.com/challenge/EhGY9aaNHiCqqpnL9) (very hard);
 
 ## Running
 `node [challenge-name]/index.js`
