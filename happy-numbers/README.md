@@ -1,5 +1,5 @@
 # Happy Numbers
-### *Category: very hard*
+### **Category: <span style="color: orange">very hard</span>**
 
 Given any number, we can create a new number by adding the sums of squares of digits of that number. For example, given `203`, our new number is `4 + 0 + 9 = 13`. If we repeat this process, we get a sequence of numbers:
 
