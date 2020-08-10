@@ -1,4 +1,4 @@
-const happy = require('./happy-numbers');
+const happy = require('.');
 
 test('it passes in platform tests', () => {
   expect(happy(100)).toBe(true);
