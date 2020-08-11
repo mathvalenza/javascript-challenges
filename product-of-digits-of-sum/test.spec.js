@@ -14,6 +14,6 @@ test('it passes in platform tests', () => {
   expect(sumDigProd(98526, 54, 863, 156489, 45, 6156)).toBe(2);
   expect(sumDigProd(999, 999)).toBe(8);
   expect(sumDigProd(1, 2, 3, 4, 5, 6)).toBe(2);
-  expect(sumDigProd(999, 2222), 2);
+  expect(sumDigProd(999, 2222)).toBe(2);
   expect(sumDigProd(8618, -2)).toBe(6);
 });
