@@ -5,9 +5,9 @@ function sumDigProd() {
 
   if ((prod + '').length > 1) {
     return sumDigProd(prod);
-  } else {
-    return prod;
   }
+
+  return prod;
 }
 
 module.exports = sumDigProd;
