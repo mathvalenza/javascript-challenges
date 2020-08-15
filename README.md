@@ -2,12 +2,13 @@
 
 JS challenges from [edabit](https://edabit.com/challenges) for trainning purposes
 
-1. [Happy numbers](https://edabit.com/challenge/EhGY9aaNHiCqqpnL9) (very hard);
-2. [Product of Digits of Sum](https://edabit.com/challenge/Kzmyf4pLx66ZRsnWk) (very hard);
+1. **Recursively Count Digits** [[expert](https://edabit.com/challenge/uL2Hi8Aj3FDgW9F7q)];
+2. **Happy numbers** [[very hard](https://edabit.com/challenge/EhGY9aaNHiCqqpnL9)];
+3. **Product of Digits of Sum** [[very hard](https://edabit.com/challenge/Kzmyf4pLx66ZRsnWk)];
 
 ## Running
-`node [challenge-name]/index.js`
+`node [challenge-dir]/index.js`
 
 ## Testing
 
-`jest [challenge-name]/test.spec.js`
+`jest [challenge-dir]/test.spec.js`
