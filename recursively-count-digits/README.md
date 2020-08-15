@@ -1,21 +1,21 @@
-# Product of Digits of Sum
-### **Category: <span style="color: orange">very hard</span>**
+# Recursion: Count the Digits
+### **Category: <span style="color: red">expert</span>**
 
-Create a function that takes numbers as arguments, adds them together, and returns the product of digits until the answer is only 1 digit long.
-
+Create a function that will recursively count the number of digits of a number. Conversion of the number to a string is not allowed, thus, the approach is recursive.
 
 **Examples**
 ```javascript
-sumDigProd(16, 28) ➞ 6
-// 16 + 28 = 44
-// 4 * 4 =  16
-// 1 * 6 = 6
+digitsCount(0) ➞ 1
 
-sumDigProd(0) ➞ 0
+digitsCount(12345) ➞ 5
 
-sumDigProd(1, 2, 3, 4, 5, 6) ➞ 2
+digitsCount(1289396387328) ➞ 13
 ```
 
 **Notes**
 
-- The input of the function is at least one number.
+- All inputs are integers but some are in exponential form, so, deal with it accordingly.
+
+- It is expected from the challenge-takers to come up with a solution using the concept of recursion or the so-called recursive approach.
+
+- You can read more topics about recursion (see Resources tab) if you aren't familiar with it yet or haven't fully understood the concept behind it before taking up this challenge or unless otherwise.
