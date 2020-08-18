@@ -53,9 +53,8 @@ function iterateNetwork(net, expressionSymbol, startIndex, endIndex) {
 }
 
 function resist(net) {
-  if (!net.includes(RIGHT_BRAKET) && !net.includes(RIGHT_PRANTHESIS)) {
-    return Number(net).toFixed(1);
-  }
+  if (!net.includes(RIGHT_BRAKET) && !net.includes(RIGHT_PRANTHESIS))
+    return +Number(net).toFixed(1);
 
   let expressionSymbol, startIndex, endIndex;
 
@@ -75,8 +74,5 @@ function resist(net) {
 
   return resist(newNet);
 }
-
-// TODO: deveria dar 76.7
-console.log(resist('([10, 20], (30, 40))'));
 
 module.exports = resist;
