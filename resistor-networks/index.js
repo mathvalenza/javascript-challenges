@@ -23,14 +23,31 @@ function getExpressionStartIndex(net, expressionSymbol, endIndex) {
   }
 }
 
-function calculateResist(net, expressionSymbol, startIndex, endIndex) {
-  let numbers = [];
+function calculateResist(resists, expressionSymbol) {
+  if (isParallelExpression(expressionSymbol)) {
+    const parallelSum = resists.reduce((acc, curr) => acc + 1 / curr, 0);
 
-  [...net.slice(startIndex, endIndex)].forEach((ch) => {
-    if (+ch) numbers.push(ch);
+    return 1 / parallelSum;
+  }
+
+  if (isSerialExpression(expressionSymbol)) {
+    return resists.reduce((acc, curr) => acc + curr, 0);
+  }
+
+  return 0;
+}
+
+function iterateNetwork(net, expressionSymbol, startIndex, endIndex) {
+  const subNet = net.slice(startIndex, endIndex + 1);
+  let resists = [];
+
+  [...subNet].forEach((ch) => {
+    if (+ch) resists.push(+ch);
   });
 
-  console.log('numbers: ', numbers);
+  const newResist = calculateResist(resists, expressionSymbol);
+
+  return net.replace(subNet, newResist);
 }
 
 function resist(net) {
@@ -40,7 +57,9 @@ function resist(net) {
     if (ch === RIGHT_PRANTHESIS || ch === RIGHT_BRAKET) {
       const startIndex = getExpressionStartIndex(net, ch, index);
 
-      const newNet = calculateResist(net, ch, startIndex, index);
+      const newNet = iterateNetwork(net, ch, startIndex, index);
+
+      console.log('new net: ', newNet);
     }
   });
 
