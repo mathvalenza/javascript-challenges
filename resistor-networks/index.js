@@ -37,13 +37,15 @@ function calculateResist(resists, expressionSymbol) {
   return 0;
 }
 
+function getResistsFromExpression(expression) {
+  const values = [...expression].slice(1, expression.length - 1).join('');
+
+  return [...values.split(',')].map((value) => +value);
+}
+
 function iterateNetwork(net, expressionSymbol, startIndex, endIndex) {
   const subNet = net.slice(startIndex, endIndex + 1);
-  let resists = [];
-
-  [...subNet].forEach((ch) => {
-    if (+ch) resists.push(+ch);
-  });
+  let resists = getResistsFromExpression(subNet);
 
   const newResist = calculateResist(resists, expressionSymbol);
 
@@ -51,21 +53,29 @@ function iterateNetwork(net, expressionSymbol, startIndex, endIndex) {
 }
 
 function resist(net) {
-  console.log(net);
+  if (!net.includes(RIGHT_BRAKET) && !net.includes(RIGHT_PRANTHESIS)) {
+    return Number(net).toPrecision(2);
+  }
 
-  [...net].forEach((ch, index) => {
+  let expressionSymbol, startIndex, endIndex;
+
+  [...net].every((ch, index) => {
     if (ch === RIGHT_PRANTHESIS || ch === RIGHT_BRAKET) {
-      const startIndex = getExpressionStartIndex(net, ch, index);
+      expressionSymbol = ch;
+      startIndex = getExpressionStartIndex(net, ch, index);
+      endIndex = index;
 
-      const newNet = iterateNetwork(net, ch, startIndex, index);
-
-      console.log('new net: ', newNet);
+      return false;
     }
+
+    return true;
   });
 
-  return 0;
+  const newNet = iterateNetwork(net, expressionSymbol, startIndex, endIndex);
+
+  return resist(newNet);
 }
 
-console.log(resist('(1, [12, 4, (1, [10, (2, 8)])])'));
+console.log(resist('([10, 20], (30, 40))'));
 
 module.exports = resist;
