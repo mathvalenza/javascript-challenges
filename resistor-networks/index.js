@@ -76,6 +76,7 @@ function resist(net) {
   return resist(newNet);
 }
 
+// TODO: deveria dar 76.7
 console.log(resist('([10, 20], (30, 40))'));
 
 module.exports = resist;
