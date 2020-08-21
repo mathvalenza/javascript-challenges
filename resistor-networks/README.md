@@ -1,6 +1,6 @@
 # Resistor Networks
 ## **Category: expert** ![#f03c15](https://via.placeholder.com/18/db2828/FFFFFF?text=E)
-```
+### [See on edabit](https://edabit.com/challenge/eWXL8Jz78hP5tW644)
 
 Resistors are electrical components that add resistance to a circuit. Resistance is measured in ohms. When resistors are connected in series, the total resistance is merely the sum of the individual resistances:
 
@@ -38,5 +38,3 @@ resist("(1, [12, 4, (1, [10, (2, 8)])])") ➞ 3.0
 
 resist("(6, [8, (4, [8, (4, [6, (8, [6, (10, 2)])])])])") ➞ 10
 ```
-
-[See on edabit](https://edabit.com/challenge/eWXL8Jz78hP5tW644)
