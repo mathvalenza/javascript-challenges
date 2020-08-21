@@ -37,3 +37,5 @@ resist("(1, [12, 4, (1, [10, (2, 8)])])") ➞ 3.0
 
 resist("(6, [8, (4, [8, (4, [6, (8, [6, (10, 2)])])])])") ➞ 10
 ```
+
+[See on edabit](https://edabit.com/challenge/eWXL8Jz78hP5tW644)
