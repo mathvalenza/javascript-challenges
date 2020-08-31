@@ -9,8 +9,8 @@ JS challenges from [edabit](https://edabit.com/challenges) for trainning purpose
 5. **Product of Digits of Sum** [[very hard](https://edabit.com/challenge/Kzmyf4pLx66ZRsnWk)].
 
 ## Running
-`node [challenge-dir]/index.js`
+`node CHALLENGE_DIR/index.js`
 
 ## Testing
 
-`jest [challenge-dir]/test.spec.js`
+`jest CHALLENGE_DIR/test.spec.js`
