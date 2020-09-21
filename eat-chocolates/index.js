@@ -3,10 +3,11 @@ const getMoneyFromInput = (moneyInput) => {
   return +pattern.exec(moneyInput)[0];
 }
 
-function countChocolates(moneyInput, cost) {
+function countChocolates(moneyInput, costInput) {
   const money = getMoneyFromInput(moneyInput);
+  const cost = getMoneyFromInput(costInput);
   
-  console.log(money);
+  console.log(money, cost);
 }
 
 // console.log(countChocolates("4$", "1$")); // 5
