@@ -1,5 +1,6 @@
 # Resistor Networks
-### **Category: <span style="color: red">expert</span>**
+## **Category: expert** ![#f03c15](https://via.placeholder.com/18/db2828/FFFFFF?text=E)
+### [See on edabit](https://edabit.com/challenge/eWXL8Jz78hP5tW644)
 
 Resistors are electrical components that add resistance to a circuit. Resistance is measured in ohms. When resistors are connected in series, the total resistance is merely the sum of the individual resistances:
 

@@ -1,5 +1,6 @@
 # Recursion: Count the Digits
-### **Category: <span style="color: red">expert</span>**
+### **Category: expert** ![#f03c15](https://via.placeholder.com/18/db2828/FFFFFF?text=E)
+### [See on edabit](https://edabit.com/challenge/uL2Hi8Aj3FDgW9F7q)
 
 Create a function that will recursively count the number of digits of a number. Conversion of the number to a string is not allowed, thus, the approach is recursive.
 

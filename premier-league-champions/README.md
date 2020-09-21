@@ -1,5 +1,6 @@
 # Premier League Champions
-### **Category: <span style="color: red">expert</span>**
+## **Category: expert** ![#f03c15](https://via.placeholder.com/18/db2828/FFFFFF?text=E)
+### [See on edabit](https://edabit.com/challenge/xuFor4LkEXfBmtDqH)
 
 Create a function that takes an array of football clubs with properties: name, wins, loss, draws, scored, conceded, and returns the team name with the highest number of points. If two teams have the same number of points, return the team with the largest goal difference.
 
