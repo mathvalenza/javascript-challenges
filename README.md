@@ -1,6 +1,6 @@
 # JavaScript Challenges
 
-JS challenges from [edabit](https://edabit.com/challenges) for trainning purposes
+JavaScript challenges from [edabit](https://edabit.com/challenges) for trainning purposes
 
 1. **Resistor Networks** [[expert](https://edabit.com/challenge/eWXL8Jz78hP5tW644)];
 2. **Premier League Champions** [[expert](https://edabit.com/challenge/xuFor4LkEXfBmtDqH)];
